@@ -1,20 +1,17 @@
 package task_1;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Integer> skaiciai=new ArrayList<>(Arrays.asList(1,2,3));
-        ArrayList<String> zodziai=new ArrayList<>(Arrays.asList("Hello", "World"));
+        Integer[] skaiciai=new Integer[]{1,2,3};
+        String[] zodziai=new String[]{"Hello", "World"};
         printArray(skaiciai);
         printArray(zodziai);
     }
 
-    public static <T> void printArray(ArrayList<T> arrayList){
+    public static <T> void printArray(T[] array){
 
-        for (T it:arrayList) {
-            System.out.println(it);
+        for (T i:array) {
+            System.out.println(i);
         }
     }
 }
