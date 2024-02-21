@@ -16,19 +16,15 @@ public class ListOfNumbers {
     }
 
     public Double getAverage() {
+        if (skaiciusSarasas.isEmpty()) {
+            return null;
+        }
+
         Double sum = 0d;
-        Double average = null;
         for (Double d : skaiciusSarasas) {
             sum += d;
         }
-        try {
-            average = sum / skaiciusSarasas.size();
-
-        } catch (Exception e) {
-            out.println(e.getMessage());
-        }
-
-        return average;
+        return sum / skaiciusSarasas.size();
     }
 
     @Override
