@@ -1,11 +1,13 @@
-package task2.medziai;
+package task.task2.medziai;
 
 import java.util.List;
+
+import static java.lang.System.*;
 
 public class Spygliuotis implements Medis {
     @Override
     public void turi() {
-        System.out.println(this + " turi spyglius.");
+        out.println(this + " turi spyglius.");
     }
 
     @Override
@@ -14,7 +16,7 @@ public class Spygliuotis implements Medis {
     }
 
     public static void spygliuociuMiskas(List<? extends Spygliuotis> arraylist) {
-        System.out.println("\nSpygliuočių miškas:");
+        out.println("\nSpygliuočių miškas:");
         for (Spygliuotis s : arraylist) {
             s.turi();
         }

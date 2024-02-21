@@ -1,4 +1,6 @@
-package task1;
+package task.task1;
+
+import static java.lang.System.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,7 +11,7 @@ public class Main {
     }
     public static <T> void printArray(T[] array) {
         for (T i : array) {
-            System.out.println(i);
+            out.println(i);
         }
     }
 }
