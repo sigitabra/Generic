@@ -1,6 +1,6 @@
-package task2;
+package task.task2;
 
-import task2.medziai.*;
+import task.task2.medziai.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;

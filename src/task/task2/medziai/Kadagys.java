@@ -1,4 +1,4 @@
-package task2.medziai;
+package task.task2.medziai;
 
 public class Kadagys extends Spygliuotis {
     @Override

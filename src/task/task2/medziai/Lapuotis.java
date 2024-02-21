@@ -1,9 +1,11 @@
-package task2.medziai;
+package task.task2.medziai;
+
+import static java.lang.System.*;
 
 public class Lapuotis implements Medis {
     @Override
     public void turi() {
-        System.out.println(this + " turi lapus.");
+        out.println(this + " turi lapus.");
     }
 
     @Override
